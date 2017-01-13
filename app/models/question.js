@@ -4,5 +4,5 @@ export default DS.Model.extend({
   question: DS.attr(),
   author: DS.attr(),
   notes: DS.attr(),
-  answer: DS.attr()
+  answers: DS.attr()
 });
