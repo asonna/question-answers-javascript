@@ -2,4 +2,10 @@
 
 <p>We hope this selection of questions are robust enough to get you ready to ace your developer interviews.</p>
 
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.question}}'s {{question.author}} in {{question.notes}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'about'}}About{{/link-to}}
