@@ -1,0 +1,14 @@
+{"questions": [{
+    "question": "What does the Router do with the information from the URL?",
+    "author": "Billy Jones",
+    "notes": "Javascript"
+  }, {
+    "question": "What is the Route Handler responsible for? What triggers it into action, and what action does it then perform?",
+    "author": "Ray Hamilton",
+    "notes": "Ember/Javascript"
+  }, {
+    "question": "What portion of the application is responsible for accessing the model? When and where does this occur?",
+    "author": "Anne Moretti",
+    "notes": "Javascript"
+  }]  
+}
