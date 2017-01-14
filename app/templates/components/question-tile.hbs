@@ -1,9 +1,10 @@
 <li>
   {{question.question}} by {{question.author}} from the {{question.notes}} language.
   {{#if isAnswerShowing}}
-    <p>{{question.answers}}</p>
+    <p>{{question.answers}} {{action 'answerHide'}}</p>
   {{else}}
     <br><button {{action 'answerShow'}}>Show all answers</button>
   {{/if}}
+  {{update-question question=question update="update"}}
   <button {{action 'delete' question}}>Delete Question</button>
 </li><br>
