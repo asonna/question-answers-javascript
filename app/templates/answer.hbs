@@ -1,0 +1,11 @@
+<h2> Answers for this questions: {{question.question}}</h2>
+
+<p>Please review all the answers registered for this question and their owners</p>
+
+<ul>
+  {{#each model as |answer|}}
+     <li>{{answer.answer}} by {{answer.author}}. </li>
+  {{/each}}
+</ul>
+
+{{#link-to 'index'}}HomePage{{/link-to}}

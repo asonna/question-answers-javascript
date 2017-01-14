@@ -1,0 +1,15 @@
+{"answers": [{
+    "question_id": "1",
+    "answer": "It allows user to answer questions about the application's current state simply by looking at the application’s URL.",
+    "author": "Responder 1"
+
+  }, {
+    "question_id": "2",
+    "answer": "The route handler is responsible for loading model data.",
+    "author": "Responder 2"
+  }, {
+    "question_id": "2",
+    "answer": "The route handler is the only part of an Ember application that can access model data. We can display model information in a template, but that template's route handler must retrieve it for the template.",
+    "author": "Responder 3"
+  }]
+}
