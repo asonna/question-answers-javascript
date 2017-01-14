@@ -8,6 +8,11 @@ export default Ember.Component.extend({
     },
     answerHide: function() {
       this.set('isAnswerShowing', false);
+    },
+    delete(rental) {
+      if (confirm('Are you sure you want to delete this question?')) {
+        this.sendAction('deleteQuestion', question);
+      }
     }
   }
 });

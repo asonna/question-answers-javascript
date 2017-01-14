@@ -3,6 +3,7 @@
   {{#if isAnswerShowing}}
     <p>{{question.answers}}</p>
   {{else}}
-    <button {{action 'answerShow'}}>Show all answers</button>
+    <br><button {{action 'answerShow'}}>Show all answers</button>
   {{/if}}
-</li>
+  <button {{action 'delete' question}}>Delete Question</button>
+</li><br>
