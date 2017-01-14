@@ -1,1 +1,8 @@
-{{yield}}
+<li>
+  {{question.question}} by {{question.author}} from the {{question.notes}} language.
+  {{#if isAnswerShowing}}
+    <p>{{question.answers}}</p>
+  {{else}}
+    <button {{action 'answerShow'}}>Show all answers</button>
+  {{/if}}
+</li>
