@@ -8,14 +8,6 @@ export default Ember.Component.extend({
     },
     answerHide: function() {
       this.set('isAnswerShowing', false);
-    },
-    update(question, params) {
-      this.sendAction('update', question, params);
-    },
-    delete(question) {
-      if (confirm('Are you sure you want to delete this question?')) {
-        this.sendAction('deleteQuestion', question);
-      }
     }
   }
 });
