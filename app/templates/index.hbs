@@ -2,10 +2,24 @@
 
 <p>We hope this selection of questions are robust enough to get you ready to ace your developer interviews.</p>
 
+<h2>Questions</h2>
+
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question = question}}
   {{/each}}
 </ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}
+
+<h2> All answers for these questions: </h2>
+
+<!-- <p>Please review all the answers registered for this question and their owners</p> -->
+
+<ul>
+  {{#each model.answers as |answer|}}
+     <li>{{answer.answer}} - by {{answer.author}}. </li>
+  {{/each}}
+</ul>
+
+<hr>

@@ -1,8 +1,11 @@
 <li>
-  {{link-to 'question' question.id}}{{question.question}} by {{question.author}} from the {{question.notes}} {{/link-to}}
-  {{#if isAnswerShowing}}
-    <p>{{question.answers}} {{action 'answerHide'}}</p>
+  {{#link-to 'question' question.id}}
+    <p>{{question.question}} - by {{question.author}}</p>
+
+  {{#if isNotesShowing}}
+    <p>{{question.notes}} {{action 'notesHide'}}</p>
   {{else}}
-    <br><button {{action 'answerShow'}}>Show all answers</button>
+    <br><button {{action 'notesShow'}}>Show additional notes</button>
   {{/if}}
+  {{/link-to}}
 </li><br>

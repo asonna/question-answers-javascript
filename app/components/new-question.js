@@ -12,7 +12,6 @@ export default Ember.Component.extend({
         question: this.get('question'),
         author: this.get('author'),
         notes: this.get('notes'),
-        answers: this.get('answers'),
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion2', params);

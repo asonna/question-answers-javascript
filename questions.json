@@ -1,34 +1,27 @@
 {"questions": [{
     "question": "What does the Router do with the information from the URL?",
     "author": "Billy Jones",
-    "notes": "Javascript",
-    "answers":[{
-        "question_id": "1",
-        "answer": "It allows user to answer questions about the application's current state simply by looking at the application’s URL.",
-        "author": "Responder 1"
-
-      }]
+    "notes": "Javascript"
   }, {
     "question": "What is the Route Handler responsible for? What triggers it into action, and what action does it then perform?",
     "author": "Ray Hamilton",
-    "notes": "Ember/Javascript",
-    "answers":[{
-        "question_id": "2",
-        "answer": "The route handler is responsible for loading model data.",
-        "author": "Responder 2"
-      }, {
-        "question_id": "2",
-        "answer": "The route handler is the only part of an Ember application that can access model data. We can display model information in a template, but that template's route handler must retrieve it for the template.",
-        "author": "Responder 3"
-      }]
+    "notes": "Ember/Javascript"
   }, {
     "question": "What portion of the application is responsible for accessing the model? When and where does this occur?",
     "author": "Anne Moretti",
-    "notes": "Javascript",
-    "answers":[{
-        "question_id": "3",
-        "answer": "google it for more details!.",
-        "author": "Responder 4"
-      }]
-  }]
+    "notes": "Javascript"
+  }],
+  "answers":[{
+      "answer": "It allows user to answer questions about the application's current state simply by looking at the application’s URL.",
+      "author": "Responder 1"
+    }, {
+      "answer": "The route handler is responsible for loading model data.",
+      "author": "Responder 2"
+    }, {
+      "answer": "The route handler is the only part of an Ember application that can access model data. We can display model information in a template, but that template's route handler must retrieve it for the template.",
+      "author": "Responder 3"
+    }, {
+      "answer": "google it for more details!.",
+      "author": "Responder 4"
+    }]
 }
