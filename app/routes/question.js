@@ -19,9 +19,9 @@ export default Ember.Route.extend({
       var question = params.question;
       question.get('answer').addObject(newAnswer);
       newAnswer.save().then(function() {
-        return rental.save;
+        return question.save;
       });
-      this.transitionTo('rental', rental);
+      this.transitionTo('question', question);
     },
     deleteQuestion(question) {
       question.destroyRecord();
