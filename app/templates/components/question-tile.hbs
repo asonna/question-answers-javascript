@@ -5,8 +5,7 @@
   {{#if isNotesShowing}}
     <p>{{question.notes}} {{action 'notesHide'}}</p>
   {{else}}
-    <br>
-    <button {{action 'notesShow'}}>Show additional notes</button>
+    <button class="btn btn-info" {{action 'notesShow'}}>Show additional notes</button>
   {{/if}}
   {{/link-to}}
-</li><br>
+</li><br><br>

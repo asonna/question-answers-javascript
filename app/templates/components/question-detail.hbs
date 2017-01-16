@@ -1,9 +1,8 @@
-{{question.question}} - by {{question.author}}.
-<br>
+<h3>{{question.question}} - by {{question.author}}.</h3>
 <p>{{question.notes}}</p>
 <!-- <p>Click to see notes: {{question.notes}} {{action 'notesHide'}}</p> -->
 
-<h3> Answers </h3>
+<h2> Answers </h2>
 <ul>
   {{#each question.answers as |answer|}}
     {{answer-tile answer=answer deleteAnswer="deleteAnswer"}}

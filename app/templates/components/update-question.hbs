@@ -2,24 +2,24 @@
   <h4>Update Question Details:</h4>
   <div>
     <form>
-      <div class="form-group">
-        <label for="question">Question</label>
-        {{input value=question id="question" placeholder=question.question}}
+      <div>
+        <label for="question">Question:</label>
+        {{input class="form-control" value=question id="question" placeholder=question.question}}
       </div>
 
-      <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author" placeholder=question.author}}
-      </div>
+      <div>
+        <label for="author">Author:</label>
+        {{input class="form-control" value=author id="author" placeholder=question.author}}
+      </div><br>
 
-      <div class="form-group">
-        <label for="notes">Additional notes</label>
-        {{input value=notes id="notes" placeholder=question.notes}}
-      </div>
+      <div>
+        <label for="notes">Additional notes:</label>
+        {{input class="form-control" value=notes id="notes" placeholder=question.notes}}
+      </div><br>
 
-      <button {{action 'update' question}}>Save</button>
+      <button class="btn btn-info" {{action 'update' question}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Update</button>
+  <br><button class="btn btn-primary" {{action 'updateQuestionForm'}}>Update</button>
 {{/if}}
