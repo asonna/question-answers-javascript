@@ -1,10 +1,9 @@
-<li>{{#link-to 'question' question.id}}
-    <p>{{question.id}} - {{question.question}} - by {{question.author}}</p>
+{{#link-to 'question' question.id}}
+    <li><p>{{question.question}} - by {{question.author}}</p>
 
   {{#if isNotesShowing}}
     <p>{{question.notes}} {{action 'notesHide'}}</p>
   {{else}}
     <button class="btn btn-info" {{action 'notesShow'}}>Show additional notes</button>
-  {{/if}}
+  {{/if}}</li><br><br>
   {{/link-to}}
-</li><br><br>
