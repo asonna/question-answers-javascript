@@ -1,6 +1,5 @@
-<li>
-  {{#link-to 'question' question.id}}
-    <p>{{question.question}} - by {{question.author}}</p>
+<li>{{#link-to 'question' question.id}}
+    <p>{{question.id}} - {{question.question}} - by {{question.author}}</p>
 
   {{#if isNotesShowing}}
     <p>{{question.notes}} {{action 'notesHide'}}</p>
